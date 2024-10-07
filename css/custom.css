@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #1a1c21;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #bcbcbc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1c21;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  top: 50px;
+}
+
+.header h2 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.header .msrp {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+  position: relative;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.jumbotron-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.jumbotron-content {
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron-content h2 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.jumbotron-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.jumbotron-content .btn {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.jumbotron-content .btn:hover {
+  background-color: #e65c00;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.features-section .feature-box {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.features-section img {
+  border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.features-section h3 {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.features-section p {
+  color: #666;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .features-section .col-xs-12 {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #333;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-section h3 {
+  font-size: 2rem;
+}
+
+.contact-section a {
+  color: #ff6600;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #e65a00;
+}
+
+/* Footer */
+.footer {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
